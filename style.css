@@ -1,0 +1,87 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.main-content {
+    margin: auto;
+    background-color: rgb(236, 236, 236);
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+}
+
+#display .input {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 50px;
+}
+
+#display .input input {
+    text-align: right;
+    margin-left: 12px;
+    font-size: 18px;
+}
+
+#display .answer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#display .answer p {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#keypad {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.numbers {
+    display: grid;
+    grid: repeat(5, 50px) / repeat(3, 50px);
+    grid-row-gap: 12px;
+    grid-column-gap: 12px;
+    margin-right: 12px;
+}
+
+.numbers button {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.operators {
+    display: grid;
+    grid: repeat(5, 50px) / repeat(1, 50px);
+    grid-row-gap: 12px;
+    grid-column-gap: 12px;
+}
+
+.operators button {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(252, 249, 107);
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
